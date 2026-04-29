@@ -11,7 +11,7 @@ script = ExtResource("1_0e3vx")
 unique_name_in_owner = true
 position = Vector2(0, -16)
 
-[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1587993478]
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=324632912]
 position = Vector2(0, 16)
 offset = Vector2(0, -90)
 zoom = Vector2(2.47, 2.47)
