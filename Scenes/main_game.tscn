@@ -1,3 +1,27 @@
 [gd_scene format=3 uid="uid://csh0f71kb7tfx"]
 
+[ext_resource type="PackedScene" uid="uid://1nn4ar1g1hm8" path="res://Scenes/player.tscn" id="1_pu3va"]
+[ext_resource type="PackedScene" uid="uid://ogmrqkmkkep2" path="res://Scenes/solid.tscn" id="2_0e3vx"]
+
 [node name="Main-Game" type="Node2D" unique_id=775442232]
+
+[node name="Player" parent="." unique_id=308332118 instance=ExtResource("1_pu3va")]
+position = Vector2(0, -16)
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1587993478]
+position = Vector2(0, 16)
+position_smoothing_enabled = true
+
+[node name="Ground-solids" type="Node" parent="." unique_id=1260826848]
+
+[node name="Solid" parent="Ground-solids" unique_id=1450811373 instance=ExtResource("2_0e3vx")]
+position = Vector2(-34, 16)
+
+[node name="Solid2" parent="Ground-solids" unique_id=1113714102 instance=ExtResource("2_0e3vx")]
+position = Vector2(-3, 16)
+
+[node name="Solid3" parent="Ground-solids" unique_id=149621812 instance=ExtResource("2_0e3vx")]
+position = Vector2(28, 16)
+
+[node name="Solid4" parent="Ground-solids" unique_id=767898308 instance=ExtResource("2_0e3vx")]
+position = Vector2(59, 16)
