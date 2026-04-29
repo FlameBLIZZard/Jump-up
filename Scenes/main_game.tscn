@@ -1,16 +1,23 @@
 [gd_scene format=3 uid="uid://csh0f71kb7tfx"]
 
+[ext_resource type="Script" uid="uid://b2gdp0q6dqjl5" path="res://Scripts/main_game.gd" id="1_0e3vx"]
 [ext_resource type="PackedScene" uid="uid://1nn4ar1g1hm8" path="res://Scenes/player.tscn" id="1_pu3va"]
 [ext_resource type="PackedScene" uid="uid://ogmrqkmkkep2" path="res://Scenes/solid.tscn" id="2_0e3vx"]
 
 [node name="Main-Game" type="Node2D" unique_id=775442232]
+script = ExtResource("1_0e3vx")
 
 [node name="Player" parent="." unique_id=308332118 instance=ExtResource("1_pu3va")]
+unique_name_in_owner = true
 position = Vector2(0, -16)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1587993478]
 position = Vector2(0, 16)
+offset = Vector2(0, -90)
+zoom = Vector2(2.47, 2.47)
+limit_smoothed = true
 position_smoothing_enabled = true
+position_smoothing_speed = 10.0
 
 [node name="Ground-solids" type="Node" parent="." unique_id=1260826848]
 
@@ -25,3 +32,111 @@ position = Vector2(28, 16)
 
 [node name="Solid4" parent="Ground-solids" unique_id=767898308 instance=ExtResource("2_0e3vx")]
 position = Vector2(59, 16)
+
+[node name="Solid5" parent="Ground-solids" unique_id=372264431 instance=ExtResource("2_0e3vx")]
+position = Vector2(88, 16)
+
+[node name="Solid6" parent="Ground-solids" unique_id=1032577118 instance=ExtResource("2_0e3vx")]
+position = Vector2(119, 16)
+
+[node name="Solid7" parent="Ground-solids" unique_id=1853728634 instance=ExtResource("2_0e3vx")]
+position = Vector2(150, 16)
+
+[node name="Solid8" parent="Ground-solids" unique_id=1696939089 instance=ExtResource("2_0e3vx")]
+position = Vector2(181, 16)
+
+[node name="Solid9" parent="Ground-solids" unique_id=1032099317 instance=ExtResource("2_0e3vx")]
+position = Vector2(-160, 64)
+
+[node name="Solid10" parent="Ground-solids" unique_id=338315847 instance=ExtResource("2_0e3vx")]
+position = Vector2(-129, 64)
+
+[node name="Solid11" parent="Ground-solids" unique_id=1867181032 instance=ExtResource("2_0e3vx")]
+position = Vector2(-98, 64)
+
+[node name="Solid12" parent="Ground-solids" unique_id=2027264026 instance=ExtResource("2_0e3vx")]
+position = Vector2(-67, 64)
+
+[node name="Solid13" parent="Ground-solids" unique_id=1353001854 instance=ExtResource("2_0e3vx")]
+position = Vector2(104, -40)
+
+[node name="Solid14" parent="Ground-solids" unique_id=547431596 instance=ExtResource("2_0e3vx")]
+position = Vector2(135, -40)
+
+[node name="Solid15" parent="Ground-solids" unique_id=2101048078 instance=ExtResource("2_0e3vx")]
+position = Vector2(166, -40)
+
+[node name="Solid16" parent="Ground-solids" unique_id=1534105644 instance=ExtResource("2_0e3vx")]
+position = Vector2(197, -40)
+
+[node name="Solid17" parent="Ground-solids" unique_id=1158423386 instance=ExtResource("2_0e3vx")]
+position = Vector2(-184, -88)
+
+[node name="Solid18" parent="Ground-solids" unique_id=605859363 instance=ExtResource("2_0e3vx")]
+position = Vector2(-153, -88)
+
+[node name="Solid19" parent="Ground-solids" unique_id=1604733780 instance=ExtResource("2_0e3vx")]
+position = Vector2(-122, -88)
+
+[node name="Solid20" parent="Ground-solids" unique_id=1784979481 instance=ExtResource("2_0e3vx")]
+position = Vector2(-91, -88)
+
+[node name="Solid21" parent="Ground-solids" unique_id=859614394 instance=ExtResource("2_0e3vx")]
+position = Vector2(264, -64)
+
+[node name="Solid22" parent="Ground-solids" unique_id=393670625 instance=ExtResource("2_0e3vx")]
+position = Vector2(295, -64)
+
+[node name="Solid23" parent="Ground-solids" unique_id=17322998 instance=ExtResource("2_0e3vx")]
+position = Vector2(326, -64)
+
+[node name="Solid24" parent="Ground-solids" unique_id=1510889653 instance=ExtResource("2_0e3vx")]
+position = Vector2(357, -64)
+
+[node name="Solid25" parent="Ground-solids" unique_id=1417626419 instance=ExtResource("2_0e3vx")]
+position = Vector2(264, 80)
+
+[node name="Solid26" parent="Ground-solids" unique_id=622330001 instance=ExtResource("2_0e3vx")]
+position = Vector2(295, 80)
+
+[node name="Solid27" parent="Ground-solids" unique_id=788356027 instance=ExtResource("2_0e3vx")]
+position = Vector2(326, 80)
+
+[node name="Solid28" parent="Ground-solids" unique_id=1042420112 instance=ExtResource("2_0e3vx")]
+position = Vector2(357, 80)
+
+[node name="Solid29" parent="Ground-solids" unique_id=1958333602 instance=ExtResource("2_0e3vx")]
+position = Vector2(-8, -120)
+
+[node name="Solid30" parent="Ground-solids" unique_id=1129043609 instance=ExtResource("2_0e3vx")]
+position = Vector2(23, -120)
+
+[node name="Solid31" parent="Ground-solids" unique_id=2129803522 instance=ExtResource("2_0e3vx")]
+position = Vector2(54, -120)
+
+[node name="Solid32" parent="Ground-solids" unique_id=453351344 instance=ExtResource("2_0e3vx")]
+position = Vector2(85, -120)
+
+[node name="Solid33" parent="Ground-solids" unique_id=2000309600 instance=ExtResource("2_0e3vx")]
+position = Vector2(408, -104)
+
+[node name="Solid34" parent="Ground-solids" unique_id=1188799229 instance=ExtResource("2_0e3vx")]
+position = Vector2(439, -104)
+
+[node name="Solid35" parent="Ground-solids" unique_id=1078915858 instance=ExtResource("2_0e3vx")]
+position = Vector2(470, -104)
+
+[node name="Solid36" parent="Ground-solids" unique_id=55605367 instance=ExtResource("2_0e3vx")]
+position = Vector2(501, -104)
+
+[node name="Solid37" parent="Ground-solids" unique_id=448734405 instance=ExtResource("2_0e3vx")]
+position = Vector2(216, -136)
+
+[node name="Solid38" parent="Ground-solids" unique_id=11986155 instance=ExtResource("2_0e3vx")]
+position = Vector2(247, -136)
+
+[node name="Solid39" parent="Ground-solids" unique_id=359274298 instance=ExtResource("2_0e3vx")]
+position = Vector2(278, -136)
+
+[node name="Solid40" parent="Ground-solids" unique_id=1459561367 instance=ExtResource("2_0e3vx")]
+position = Vector2(309, -136)
