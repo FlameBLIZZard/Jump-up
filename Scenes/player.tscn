@@ -31,7 +31,8 @@ animations = [{
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=2033231983]
 script = ExtResource("1_cvnsp")
-JUMP_VELOCITY = -400.0
+JUMP_VELOCITY = -500.0
+GRAVITY = Vector2(0, 2000)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=493302329]
 position = Vector2(0, 1)
