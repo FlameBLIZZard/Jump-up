@@ -1,45 +1,16 @@
 [gd_scene format=3 uid="uid://1nn4ar1g1hm8"]
 
 [ext_resource type="Script" uid="uid://b372rtgmmr3xq" path="res://Scripts/character_body_2d.gd" id="1_cvnsp"]
-[ext_resource type="Texture2D" uid="uid://tq8aqgp64vvx" path="res://Sprites/Player-Animated-Sprites/Player_1.png" id="2_fkybt"]
-[ext_resource type="Texture2D" uid="uid://bxxgeldr0p5y5" path="res://Sprites/Player-Animated-Sprites/Player_2.png" id="3_x3wgy"]
-[ext_resource type="Texture2D" uid="uid://de3rvmnr2s56o" path="res://Sprites/Player-Animated-Sprites/Player_3.png" id="4_3smsa"]
-[ext_resource type="Texture2D" uid="uid://dgf7teomeyjvd" path="res://Sprites/Player-Animated-Sprites/Player_4.png" id="5_8erm5"]
+[ext_resource type="Texture2D" uid="uid://caruplyw8ns8t" path="res://Sprites/Player-Placeholder.png" id="2_cvnsp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cvnsp"]
-size = Vector2(24, 30)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_f1ek2"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_fkybt")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_x3wgy")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_3smsa")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_8erm5")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
+size = Vector2(28, 32)
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=2033231983]
 script = ExtResource("1_cvnsp")
-JUMP_VELOCITY = -500.0
-GRAVITY = Vector2(0, 2000)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=493302329]
-position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_cvnsp")
 
-[node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=2024905788]
-sprite_frames = SubResource("SpriteFrames_f1ek2")
-autoplay = "default"
-frame = 1
-frame_progress = 0.8865773
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1167676798]
+texture = ExtResource("2_cvnsp")

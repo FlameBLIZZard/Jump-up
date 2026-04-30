@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://c1emo3pfrdwob" path="res://Sprites/Solid-Placeholder.png" id="1_mu4gw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kfjup"]
-size = Vector2(30, 30)
+size = Vector2(32, 32)
 
 [node name="Solid" type="Node2D" unique_id=1450811373]
 
